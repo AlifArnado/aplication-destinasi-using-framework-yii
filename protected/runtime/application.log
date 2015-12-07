@@ -1,0 +1,411 @@
+2015/11/30 23:29:50 [error] [php] include(Propinsi.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/html/pertemuan11/protected/views/kota/_form.php(36): spl_autoload_call()
+#1 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#2 /var/www/html/yii/framework/web/CBaseController.php(95): KotaController->renderInternal()
+#3 /var/www/html/yii/framework/web/CController.php(869): KotaController->renderFile()
+#4 /var/www/html/pertemuan11/protected/views/kota/create.php(18): KotaController->renderPartial()
+#5 /var/www/html/yii/framework/web/CBaseController.php(126): require()
+#6 /var/www/html/yii/framework/web/CBaseController.php(95): KotaController->renderInternal()
+#7 /var/www/html/yii/framework/web/CController.php(869): KotaController->renderFile()
+#8 /var/www/html/yii/framework/web/CController.php(782): KotaController->renderPartial()
+#9 /var/www/html/pertemuan11/protected/controllers/KotaController.php(94): KotaController->render()
+#10 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionCreate()
+#11 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): KotaController->runAction()
+#13 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#15 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): KotaController->filterAccessControl()
+#16 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#17 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#18 /var/www/html/yii/framework/web/CController.php(265): KotaController->runActionWithFilters()
+#19 /var/www/html/yii/framework/web/CWebApplication.php(282): KotaController->run()
+#20 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#22 /var/www/html/pertemuan11/index.php(13): CWebApplication->run()
+REQUEST_URI=/pertemuan11/index.php?r=kota/create
+in /var/www/html/pertemuan11/protected/views/kota/_form.php (36)
+in /var/www/html/pertemuan11/protected/views/kota/create.php (18)
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (94)
+2015/11/30 23:49:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:49:41 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:50:17 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:50:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/html/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#9 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#10 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#11 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:51:13 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:51:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:53:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:53:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:55:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:55:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:55:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:55:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:56:10 [error] [system.db.CDbCommand] CDbCommand::() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:56:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(377): CDbCommand->queryInternal('', 0, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->query()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:57:23 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:57:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'destinasi.propinsi' doesn't exist. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, propinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/11/30 23:58:03 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'propinsi.id' in 'where clause'. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, provinsi
+				WHERE kota.propinsi_id = propinsi.id.
+in /var/www/html/pertemuan11/protected/controllers/KotaController.php (65)
+in /var/www/html/pertemuan11/index.php (13)
+2015/11/30 23:58:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'propinsi.id' in 'where clause'. The SQL statement executed was: SELECT kota.propinsi_id, kota.nama_kota, provinsi.propinsi
+				FROM kota, provinsi
+				WHERE kota.propinsi_id = propinsi.id' in /var/www/html/yii/framework/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/html/pertemuan11/protected/controllers/KotaController.php(65): CDbCommand->queryAll()
+#2 /var/www/html/yii/framework/web/actions/CInlineAction.php(49): KotaController->actionTampilkan()
+#3 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('tampilkan')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('kota/tampilkan')
+#13 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#14 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/pertemuan11/index.php?r=kota/tampilkan
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=kota/tampilkan
+---
+2015/12/07 20:11:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tblPegawai".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tblPegawai')
+#1 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pertemuan11/index.php?r=tblPegawai
+---
+2015/12/07 20:12:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tblPegawai".' in /var/www/html/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tblPegawai')
+#1 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#2 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/pertemuan11/index.php?r=tblPegawai
+---
+2015/12/07 20:21:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE tbl_pegawai SET nip=:d_nip, nama=:d_nama, alamat=:d_alamat, tanggal_lahir=:d_tanggal_lahir, agama=:d_agama WHERE id=:id.
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (132)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:21:37 [error] [php] include(ii.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php(135): spl_autoload_call()
+#1 unknown(0): TblPegawai2Controller->actionUpdate()
+#2 /var/www/html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): TblPegawai2Controller->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): TblPegawai2Controller->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): TblPegawai2Controller->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): TblPegawai2Controller->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/pertemuan11/index.php(13): CWebApplication->run()
+REQUEST_URI=/pertemuan11/index.php?r=tblPegawai2/update&id=1038926
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (135)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:24:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: UPDATE tbl_pegawai SET nip=:d_nip, nama=:d_nama, alamat=:d_alamat, tanggal_lahir=:d_tanggal_lahir, agama=:d_agama WHERE id=:id.
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (132)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:24:57 [error] [php] include(ii.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php(135): spl_autoload_call()
+#1 unknown(0): TblPegawai2Controller->actionUpdate()
+#2 /var/www/html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): TblPegawai2Controller->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): TblPegawai2Controller->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): TblPegawai2Controller->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): TblPegawai2Controller->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/pertemuan11/index.php(13): CWebApplication->run()
+REQUEST_URI=/pertemuan11/index.php?r=tblPegawai2/update&id=1038926
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (135)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:25:40 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: UPDATE tbl_pegawai SET nip=:d_nip, nama=:Tamang ali, alamat=:Sumatra, tanggal_lahir=:1993-05-19, agama=:Islam WHERE id=:id.
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (132)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:25:40 [error] [php] include(ii.php): failed to open stream: No such file or directory (/var/www/html/yii/framework/YiiBase.php:432)
+Stack trace:
+#0 /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php(135): spl_autoload_call()
+#1 unknown(0): TblPegawai2Controller->actionUpdate()
+#2 /var/www/html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): TblPegawai2Controller->runAction()
+#6 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): TblPegawai2Controller->filterAccessControl()
+#9 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/html/yii/framework/web/CController.php(265): TblPegawai2Controller->runActionWithFilters()
+#12 /var/www/html/yii/framework/web/CWebApplication.php(282): TblPegawai2Controller->run()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#15 /var/www/html/pertemuan11/index.php(13): CWebApplication->run()
+REQUEST_URI=/pertemuan11/index.php?r=tblPegawai2/update&id=1038926
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (135)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:26:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: DELETE FROM tbl_pegawai WHERE id=:id.
+in /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php (157)
+in /var/www/html/pertemuan11/index.php (13)
+2015/12/07 20:26:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause'. The SQL statement executed was: DELETE FROM tbl_pegawai WHERE id=:id' in /var/www/html/yii/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /var/www/html/pertemuan11/protected/controllers/TblPegawai2Controller.php(157): CDbCommand->execute()
+#1 [internal function]: TblPegawai2Controller->actionDelete('1038926')
+#2 /var/www/html/yii/framework/web/actions/CAction.php(109): ReflectionMethod->invokeArgs(Object(TblPegawai2Controller), Array)
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(TblPegawai2Controller), Object(ReflectionMethod), Array)
+#4 /var/www/html/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(1116): CFilterChain->run()
+#7 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterPostOnly(Object(CFilterChain))
+#8 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/html/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /var/www/html/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /var/www/html/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /var/www/html/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /var/www/html/yii/framework/web/CController.php(291): CFilterChain->run()
+#14 /var/www/html/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(282): CController->run('delete')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('tblPegawai2/del...')
+#17 /var/www/html/yii/framework/base/CApplication.php(184): CWebApplication->processRequest()
+#18 /var/www/html/pertemuan11/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/pertemuan11/index.php?ajax=tbl-pegawai2-grid&id=1038926&r=tblPegawai2%2Fdelete
+HTTP_REFERER=http://localhost/pertemuan11/index.php?r=tblPegawai2/admin
+---
